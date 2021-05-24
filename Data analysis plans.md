@@ -22,7 +22,7 @@ For **each** of the four scenarios below, answer the following questions. Please
 	3. Byte pair encoding, tokenization, and padding.
 	4. GAN, RNN for the generator, RNN for the discriminator.
 	5. Human evaluation would be used as validation. 
-	6. People could be tricked into believing the author actually wrote the fake tweet.
+	6. People could be tricked into believing the author actually wrote the fake tweet, could be used for impersonation. 
 
 3. A company would like to be able to predict the next months’ sales for each of its products. You have a dataset that the company has collected for many years, with data for a particular product on a particular month in each row. Each row contains the number of sales for the month, the number of sales from the previous month, the average rating (1-5) of the product in the previous month, the number of reviews in the previous month, the product type (e.g. “toaster”, “coffee maker”, “rice cooker”), its price the previous month, and its price for the current month.
 	1. Regression.
@@ -34,8 +34,8 @@ For **each** of the four scenarios below, answer the following questions. Please
 
 4. You would like to predict the presence of a certain disease using chest x-ray data. You have a lot of x-ray images, a small amount of which have been labeled as having the disease or not having the disease. The rest of the images are unknown as to whether or not the person has the disease.
 	1. Classification.
-	2. Semi supervised, the labels are the already provided labels and the labels that are to be generated.
-	3. None (the CNN handles it), but the labeled and unlabeled data needs to be separated. 
-	4. Label propagation and a CNN.
+	2. Semi supervised, the labels are the already provided labels and the pseudo-labels that will be generated. 
+	3. Potentially down sampling, and gray scale (if stored in RGB).
+	4. CNN (+ maybe label propagation).
 	5. F-score for validation. 
-	6. If this model were to be actually used for determining if someone had the disease, people may be uncomfortable with an algorithm diagnosing them instead of a doctor. 
+	6. Model explainability: if this model were to be actually used for determining if someone had the disease, people may be uncomfortable with an algorithm diagnosing them instead of a doctor. 
